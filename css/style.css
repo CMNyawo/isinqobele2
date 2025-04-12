@@ -1,0 +1,127 @@
+/* Reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e8e1e1;
+  padding: 20px;
+  color: #102E50;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #102E50;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #3B6790;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Divider */
+
+.thick-divider {
+  border: 0;
+  height: 5px;
+  background-color: #ccc;
+  margin: 60px auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.service h3 {
+  background-color: #f2f2f2;
+  color: #222;
+  padding: 15px 10px 5px;
+  font-size: 1.2em;
+}
+
+.text-overlay {
+  padding: 0 15px 15px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Zoomed effect */
+.service.zoom {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ddd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #3B6790;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
