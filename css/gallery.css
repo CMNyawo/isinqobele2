@@ -14,16 +14,44 @@ body {
 }
 
 /* Header */
+/* Header container */
 header {
-  background-color: #102E50;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
+  display: flex;
+  align-items: flex-start; /* Align items to top */
+  padding: 20px;
+  background-color: #10375C;
+  gap: 20px; /* Space between logo and text */
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* Logo container */
+.logo-top-left img {
+  height: 140px;
+}
+
+/* Header text container */
+.header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+.header-text h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Subtitle */
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 /* Navigation */
@@ -36,13 +64,14 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
   margin: 0 20px;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ddd;
+  color: #f1c40f;
 }
 
 /* Section Headings */
@@ -141,17 +170,58 @@ nav a:hover {
 }
 
 /* Contact Section */
-#contact {
+.contact-section {
+  background: #f7f7f7;
+  padding: 40px 20px;
   text-align: center;
-  padding: 40px 10px;
-  background-color: #eee;
-  border-radius: 10px;
-  margin-bottom: 50px;
+  border-radius: 12px;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#contact h2 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-item {
+  font-size: 1.1em;
+  color: #222;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
 }
 
 /* Footer */
